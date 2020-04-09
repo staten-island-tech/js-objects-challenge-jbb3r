@@ -24,7 +24,8 @@ const presidents = [
   repub1Presidents = presidents.filter(name => name.terms === 1 && name.party === "R")
   console.log(repub1Presidents)
   //3) return only the last three presidents
-   
+  console.log(presidents.slice(-3));
+  
   //4) log all dems who served 2 terms. HINT use chain filter, filter and slice
    democrat2Presidents = presidents.filter(name => name.party === "D" && name.terms === 2)
    console.log(democrat2Presidents)
